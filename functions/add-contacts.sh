@@ -4,7 +4,7 @@ function create()
 {
     source ./functions/interface.sh
     banco_de_dados="banco-de-dados.txt"
-    
+
     Nome=""
     DDD=""
     Telefone=""

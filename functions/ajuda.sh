@@ -14,7 +14,7 @@ opcoes de entrada NA INTERFACE
 	*listar (lista os contatos existentes)
 	*cls ou clear (limpa o prompt)
 	*menu (retorna para o menu)
-	
+
 opcoes de entrada COMO PARAMETROS
 	-c ou --create (cria um novo contato)
 	-s ou --search (buscar por contatos existentes)
@@ -23,7 +23,7 @@ opcoes de entrada COMO PARAMETROS
 
 ctrl+c (para fechar o programa)
 
-O que deseje fazer? 
+O que deseje fazer?
 
 EOF
 	read -p "ps: pressione enter quando tiver acabado de ler suas opcoes " nothing

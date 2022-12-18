@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-function buscar() 
+function buscar()
 {
     source ./filtros-de-busca/id.sh
     source ./filtros-de-busca/nome.sh
     source ./filtros-de-busca/telefone.sh
     source ./interface.sh
-    
+
     clear
 
 #menu de escolhas
@@ -15,17 +15,19 @@ Pelo que deseja buscar?
     *Nome
     *Telefone
     *ID (imprime todos os contatos)
-    
+
 deseja sair? escreva 'exit'
 EOF
+
+    #funcao de pesquisa
     read -p "Qual sua escolha? " opcao
-    opcao=$(echo "$opcao" | tr [:upper:] [:lower:])
+    opcao="$opcao,,"
 
     case "$opcao" in
-        exit) interface_de_criacao ;;   #retorna para o menu
-        id) PorID;;                     #busca por ID
-        nome) nome;;                      #busca por nome
-        telefone) telefone;;                      #busca por nome
+        exit) interface_de_criacao ;;   	#retorna para o menu
+        id) PorID;;                     	#busca por ID
+        nome) nome;;                      	#busca por nome
+        telefone) telefone;;                    #busca por nome
         *) echo "essa opcao nao existe ;-;" ;;
     esac
 }

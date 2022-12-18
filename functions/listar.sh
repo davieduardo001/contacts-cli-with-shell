@@ -13,7 +13,7 @@ function listar()
     echo -e "id | nome | ddd | telefone\n"
     cat "$database" | tr ":" "|"
     echo -e "\nid | nome | ddd | telefone\n"
-    
+
     read -p "quando finalizar a pesquisa pressione enter " nothing
     interface_de_criacao #retorna para ainterface
 }
